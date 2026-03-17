@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team Headshots</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #ccdedd; display: flex; justify-content: center; padding: 2rem 1rem; min-height: 100vh; }
+  .flyer { background: #fff; max-width: 680px; width: 100%; padding: 2.5rem 2.5rem 2rem; border-radius: 16px; }
+  .badge { display: inline-block; background: #e4f0ee; border: 0.5px solid #9fc4be; border-radius: 999px; font-size: 11px; color: #4a7e78; padding: 4px 14px; letter-spacing: 0.09em; text-transform: uppercase; margin-bottom: 1.1rem; }
+  h1 { font-size: 30px; font-weight: 500; color: #1a2e2c; line-height: 1.2; margin-bottom: 0.4rem; }
+  .subhead { font-size: 15px; color: #6e9490; margin-bottom: 1.75rem; line-height: 1.6; }
+  .photo-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 1.75rem; }
+  .photo-wrap { border-radius: 12px; overflow: hidden; position: relative; }
+  .photo-wrap img { width: 100%; display: block; aspect-ratio: 3/4; object-fit: cover; object-position: top; }
+  .photo-tag { position: absolute; bottom: 10px; left: 10px; background: rgba(255,255,255,0.88); border-radius: 999px; font-size: 11px; color: #4a7e78; padding: 3px 10px; backdrop-filter: blur(4px); }
+  hr { border: none; border-top: 0.5px solid #c0d8d4; margin: 1.5rem 0; }
+  .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 1.5rem; }
+  .info-card { background: #eef6f5; border-radius: 10px; padding: 0.8rem 1rem; }
+  .ic-label { font-size: 10px; color: #7ab0aa; text-transform: uppercase; letter-spacing: 0.09em; margin-bottom: 3px; }
+  .ic-value { font-size: 15px; font-weight: 500; color: #1a2e2c; }
+  .ic-sub { font-size: 12px; color: #6e9490; margin-top: 2px; }
+  .section-title { font-size: 11px; font-weight: 500; color: #7ab0aa; text-transform: uppercase; letter-spacing: 0.09em; margin-bottom: 0.75rem; }
+  ul.tips { list-style: none; display: flex; flex-direction: column; gap: 9px; margin-bottom: 1.5rem; }
+  ul.tips li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: #1a2e2c; line-height: 1.55; }
+  .dot { width: 5px; height: 5px; border-radius: 50%; background: #9fc4be; margin-top: 7px; flex-shrink: 0; }
+  .footer-note { font-size: 13px; color: #6e9490; line-height: 1.65; border-left: 2px solid #9fc4be; padding-left: 12px; }
+</style>
+</head>
+<body>
+<div class="flyer">
+  <div class="badge">Staff headshots</div>
+  <h1>Let's get your headshot taken.</h1>
+  <p class="subhead">A quick session to give all staff and student photos a consistent, unified look across the website.</p>
 
+  <div class="photo-row">
+    <div class="photo-wrap">
+      <img src="https://github.com/ChrisFree72/Headshots/blob/main/R6M23089.jpeg?raw=true" alt="Backdrop option 1 — overgrowth">
+      <span class="photo-tag">Overgrowth backdrop</span>
+    </div>
+    <div class="photo-wrap">
+      <img src="https://github.com/ChrisFree72/Headshots/blob/main/R6M23101.jpeg?raw=true" alt="Backdrop option 2 — overgrowth with flowers">
+      <span class="photo-tag">Overgrowth with blooms</span>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="info-grid">
+    <div class="info-card">
+      <div class="ic-label">Primary date</div>
+      <div class="ic-value">March 27th</div>
+      <div class="ic-sub">Other dates available if needed</div>
+    </div>
+    <div class="info-card">
+      <div class="ic-label">Time</div>
+      <div class="ic-value">2:30 – 5:00 pm</div>
+      <div class="ic-sub">Consistent natural light for all</div>
+    </div>
+    <div class="info-card">
+      <div class="ic-label">Locations</div>
+      <div class="ic-value">2 backdrop options</div>
+      <div class="ic-sub">Taller members encouraged to use overgrowth backdrop</div>
+    </div>
+    <div class="info-card">
+      <div class="ic-label">Editing</div>
+      <div class="ic-value">Minimally retouched</div>
+      <div class="ic-sub">Examples above are minimally retouched — your actual photos will receive full editing attention</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <p class="section-title">What to know before you show up</p>
+  <ul class="tips">
+    <li><span class="dot"></span><span>Come with your hair as neat as possible — flyaways will be cleaned up in post.</span></li>
+    <li><span class="dot"></span><span>Messy lunch? No worries. Clothing stains can and will be removed in editing.</span></li>
+    <li><span class="dot"></span><span>No need to stress over blemishes or scars — they can be removed without a trace.</span></li>
+    <li><span class="dot"></span><span>March 27th is the primary day, but if it doesn't work for you, we'll find a nearby date.</span></li>
+    <li><span class="dot"></span><span>Smile! If you don't... just wait. A bad joke is on its way.</span></li>
+  </ul>
+
+  <hr>
+
+  <p class="footer-note">Participation is strongly encouraged! The goal is a consistent, polished look across all staff and student photos on the website. Questions? Reach out and we'll get you sorted.</p>
+</div>
+</body>
+</html>
